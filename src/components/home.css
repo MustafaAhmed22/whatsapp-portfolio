@@ -1,0 +1,246 @@
+body {
+  color: #fff !important;
+  font-size: 20px !important;
+}
+h1 {
+  color: red;
+}
+.img1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+.modal-body img {
+  width: 500px;
+  height: 600px;
+}
+.nav1 {
+  background-color: #075e54;
+  display: flex;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+.my-details {
+  margin-top: 20px;
+  line-height: 5px;
+}
+.my-details .time {
+  color: #b2babb;
+  font-size: 12px;
+}
+.my-details .Name {
+  font-size: 20px;
+}
+.first {
+  background-color: #075e54;
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.footer {
+  background-color: #075e54;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.footer input {
+  position: relative;
+  left: 100px;
+  width: 500px;
+  border-radius: 10px;
+  height: 40px;
+  background-color: #fff !important;
+  border: 1px solid rgb(1, 51, 34);
+  color: black;
+}
+.main {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.btn-send {
+  position: relative;
+  left: 120px;
+  color: black !important;
+  padding: 10px;
+  border-radius: 10px;
+}
+.second {
+  background-color: #075e54;
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  line-height: 20px;
+  margin-bottom: 62px;
+}
+.yourword {
+  background-color: #075e54;
+  height: auto;
+  margin: 10px;
+  float: right;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media only screen and (min-width: 325px) {
+  .footer input {
+    position: relative;
+    font-size: 25px !important;
+    left: 40px;
+    width: 150px;
+    margin: 15px;
+    border-radius: 10px;
+    height: 40px;
+    background-color: rgb(13, 92, 68);
+  }
+  .btn-send {
+    position: relative;
+    left: 40px;
+    color: black !important;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .main {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .footer {
+    background-color: #075e54;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .footer input {
+    position: relative;
+    left: 50px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 10px;
+    height: 40px;
+  }
+  .btn-send {
+    position: relative;
+    left: 50px;
+    color: black !important;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(8, 124, 118);
+    border: none;
+  }
+  .main {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .footer {
+    background-color: #075e54;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer input {
+    position: relative;
+    left: 60px;
+    width: 250px;
+
+    border-radius: 10px;
+    height: 40px;
+  }
+  .btn-send {
+    position: relative;
+    left: 80px;
+    color: black !important;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .main {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .footer input {
+    position: relative;
+    left: 100px;
+    width: 300px;
+
+    border-radius: 10px;
+    height: 40px;
+  }
+  .btn-send {
+    position: relative;
+    left: 120px;
+    color: black !important;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+  .main {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer input {
+    position: relative;
+    left: 100px;
+    width: 400px;
+    margin: 15px;
+    border-radius: 10px;
+    height: 40px;
+  }
+  .btn-send {
+    position: relative;
+    left: 120px;
+    color: black !important;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+  .main {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .footer input {
+    position: relative;
+    left: 140px;
+    width: 500px;
+    margin: 15px;
+    border-radius: 10px;
+    height: 40px;
+  }
+  .btn-send {
+    position: relative;
+    left: 130px;
+    color: #fff !important;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+  .main {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+a {
+  color: chartreuse !important;
+  text-decoration: none !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
