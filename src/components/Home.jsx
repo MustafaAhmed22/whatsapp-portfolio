@@ -42,6 +42,7 @@ function Home() {
       console.log(message);
     }
   };
+
   const handleclick = (event) => {
     new Audio(sound).play();
     // setTimeout(() => {
@@ -154,7 +155,7 @@ function Home() {
         <p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13803.624234343322!2d31.319848499999996!3d30.125501500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815a15c11b89d%3A0x5154e80c478e3c91!2sEl%20Matarya!5e0!3m2!1sen!2seg!4v1679939751286!5m2!1sen!2seg"
-            width="280"
+            width="250"
             height="300"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -210,7 +211,7 @@ function Home() {
         </div>
       </div>
 
-      <div style={myStyle} className="main">
+      <div style={myStyle} className="main ">
         <div className="nav1 ">
           <img
             className="img1"
@@ -224,63 +225,64 @@ function Home() {
             <p className="time">Last Seen today {hoursMin} </p>
           </div>
         </div>
+
         <div className="container ">
           {firstfunction()}
-          {updated.map((e) => {
-            if (e === "more") {
+          {updated.map((enteredWord) => {
+            if (enteredWord === "more") {
               return (
                 <>
-                  {yourWord(e)}
+                  {yourWord(enteredWord)}
 
                   <br />
                   <br />
                   {moreFunction()}
                 </>
               );
-            } else if (e === "skills") {
+            } else if (enteredWord === "skills") {
               return (
                 <>
-                  {yourWord(e)}
+                  {yourWord(enteredWord)}
 
                   <br />
                   <br />
                   {skillsFunction()}
                 </>
               );
-            } else if (e === "resume") {
+            } else if (enteredWord === "resume") {
               return (
                 <>
-                  {yourWord(e)}
+                  {yourWord(enteredWord)}
 
                   <br />
                   <br />
                   {resumeFunction()}
                 </>
               );
-            } else if (e === "education") {
+            } else if (enteredWord === "education") {
               return (
                 <>
-                  {yourWord(e)}
+                  {yourWord(enteredWord)}
 
                   <br />
                   <br />
                   {educationFunction()}
                 </>
               );
-            } else if (e === "address") {
+            } else if (enteredWord === "address") {
               return (
                 <>
-                  {yourWord(e)}
+                  {yourWord(enteredWord)}
 
                   <br />
                   <br />
                   {addressFunction()}
                 </>
               );
-            } else if (e === "contact") {
+            } else if (enteredWord === "contact") {
               return (
                 <>
-                  {yourWord(e)}
+                  {yourWord(enteredWord)}
 
                   <br />
                   <br />
@@ -290,7 +292,9 @@ function Home() {
             }
           })}
         </div>
-        <footer className=" text-lg-start fixed-bottom footer">
+      </div>
+      <footer className=" footer ">
+        <div className="footer-container">
           <input
             type="text"
             id="message"
@@ -299,11 +303,11 @@ function Home() {
             onKeyDown={handleKeyDown}
             value={message}
           />
-          <button className="btn-send" onClick={handleclick}>
+          <button className="btn-send btn btn-danger" onClick={handleclick}>
             Send
           </button>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </>
   );
 }

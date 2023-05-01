@@ -1,6 +1,6 @@
 body {
   color: #fff !important;
-  font-size: 20px !important;
+  font-size: 15px !important;
 }
 h1 {
   color: red;
@@ -16,8 +16,12 @@ h1 {
   width: 500px;
   height: 600px;
 }
+.main {
+  margin-left: 20%;
+  margin-right: 20%;
+}
 .nav1 {
-  background-color: #075e54;
+  background-color: #033630;
   display: flex;
   z-index: 2;
   position: sticky;
@@ -36,51 +40,65 @@ h1 {
 }
 .first {
   background-color: #075e54;
-  width: 300px;
-  height: auto;
+  width: 320px;
+  /* height: auto;*/
   padding: 10px;
-  margin: 10px;
+  margin-top: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  line-height: 20px;
 }
+
 .footer {
-  background-color: #075e54;
   margin-left: 20%;
   margin-right: 20%;
 }
+
 .footer input {
+  /*
   position: relative;
   left: 100px;
-  width: 500px;
+  */
+  width: 30vw;
   border-radius: 10px;
   height: 40px;
   background-color: #fff !important;
   border: 1px solid rgb(1, 51, 34);
   color: black;
+  margin-left: 10vw;
+  margin-right: 2vw;
 }
-.main {
-  margin-left: 20%;
-  margin-right: 20%;
+
+.footer-container {
+  background-color: #033630;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
 }
+
 .btn-send {
+  /*
   position: relative;
   left: 120px;
+  */
+
   color: black !important;
-  padding: 10px;
-  border-radius: 10px;
 }
 .second {
   background-color: #075e54;
   width: 300px;
   height: auto;
   padding: 10px;
-  margin: 10px;
+  margin-top: 40px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   line-height: 20px;
-  margin-bottom: 62px;
+  /*margin-bottom: 62px;*/
+  width: 320px;
+  overflow: auto;
 }
 .yourword {
   background-color: #075e54;
@@ -93,13 +111,22 @@ h1 {
   border-bottom-left-radius: 10px;
 }
 
+a {
+  color: chartreuse !important;
+  text-decoration: none !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+
+/*
+
 @media only screen and (min-width: 325px) {
   .footer input {
     position: relative;
     font-size: 25px !important;
     left: 40px;
     width: 150px;
-    margin: 15px;
+    margin: 10px;
     border-radius: 10px;
     height: 40px;
     background-color: rgb(13, 92, 68);
@@ -111,14 +138,10 @@ h1 {
     padding: 10px;
     border-radius: 10px;
   }
-  .main {
-    margin-left: 0%;
-    margin-right: 0%;
-  }
   .footer {
     background-color: #075e54;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
 
@@ -127,7 +150,7 @@ h1 {
     position: relative;
     left: 50px;
     width: 200px;
-    margin: 15px;
+    margin: 10px;
     border-radius: 10px;
     height: 40px;
   }
@@ -139,10 +162,6 @@ h1 {
     border-radius: 10px;
     background-color: rgb(8, 124, 118);
     border: none;
-  }
-  .main {
-    margin-left: 0%;
-    margin-right: 0%;
   }
   .footer {
     background-color: #075e54;
@@ -187,7 +206,7 @@ h1 {
     color: black !important;
     padding: 10px;
     border-radius: 10px;
-    margin: 15px;
+    margin: 10px;
   }
   .main {
     margin-left: 20%;
@@ -199,7 +218,7 @@ h1 {
     position: relative;
     left: 100px;
     width: 400px;
-    margin: 15px;
+    margin: 10px;
     border-radius: 10px;
     height: 40px;
   }
@@ -209,7 +228,7 @@ h1 {
     color: black !important;
     padding: 10px;
     border-radius: 10px;
-    margin: 15px;
+    margin: 10px;
   }
   .main {
     margin-left: 20%;
@@ -221,7 +240,7 @@ h1 {
     position: relative;
     left: 140px;
     width: 500px;
-    margin: 15px;
+    margin: 10px;
     border-radius: 10px;
     height: 40px;
   }
@@ -231,16 +250,87 @@ h1 {
     color: #fff !important;
     padding: 10px;
     border-radius: 10px;
-    margin: 15px;
+    margin: 10px;
   }
   .main {
     margin-left: 20%;
     margin-right: 20%;
   }
 }
-a {
-  color: chartreuse !important;
-  text-decoration: none !important;
-  font-size: 20px !important;
-  font-weight: 700 !important;
+*/
+
+/* Media Query*/
+@media only screen and (min-width: 325px) {
+  .main {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .first {
+    width: 279px;
+  }
+
+  .yourword {
+    background-color: #075e54;
+    height: 63px;
+    margin-top: 10px;
+    float: right;
+    padding: 8px;
+  }
+  .second {
+    width: 279px;
+  }
+  .footer {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .footer input {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  /*
+  .footer input {
+    position: relative;
+    left:100px;
+    width: 300px;
+    border-radius: 10px;
+    height:30px;
+    background-color: #fff !important;
+    border: 1px solid rgb(1, 51, 34);
+    color: black;
+  }
+
+  .btn-send {
+    position: relative;
+    left:130px;
+    color: black !important;
+  }
+  */
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .footer input {
+    width: 30vw;
+  }
+
+  .footer {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1400px) {
 }
